@@ -272,10 +272,30 @@ body {
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  outline: none;}
+  outline: none;
+}
 .input::placeholder {
   color: #aaa;
   font-family: "JetBrains Mono", monospace, Arial, Helvetica, sans-serif;
+}
+.input2::placeholder {
+  color: #aaa;
+  font-family: "JetBrains Mono", monospace, Arial, Helvetica, sans-serif;
+}
+.input2 {
+  padding: 4px;
+  width: 100%;
+  font-size: clamp(0.4rem, 1vw, 1rem);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.egyeb {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: bottom;
 }
 .food, .program-choice {
   display: flex;
@@ -404,7 +424,7 @@ footer {
 .logok {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 100px;
   margin-bottom: 50px;
 }
 .footer-logo {
