@@ -136,12 +136,17 @@ body {
   margin-bottom: 10px;
   object-fit: cover;
 }
+.BIG-program {
+  width: 100%;
+  position: relative;
+}
 .program {
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   justify-self: center;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 .program-big-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
@@ -153,9 +158,23 @@ body {
 .program-item {
   display: flex;
   flex-direction: row;
+  position: relative;
+  background-color: none;
   width: 100%;
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 50px;
+  align-items: center;
+}
+.program-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 35px;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+  padding: 20px 20px;
 }
 .prog-nav {
   display: flex;
@@ -169,23 +188,48 @@ body {
 .program-content {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: #4451d9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
+  border-radius: 15px;
+  padding: 20px 20px;
+}
+.program-content2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #44d97b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 15px;
+  padding: 20px 20px;
 }
 .program-time {
   font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #2a37c8;
+  font-weight: 600;
+  text-align: left;
+  text-wrap: nowrap;
+}
+.program-nev {
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: #fff;
   font-weight: 600;
+  margin-bottom: 5px;
   text-align: left;
 }
 .program-title {
   font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   color: #fff;
   font-weight: 800;
-  margin: 10px 0;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.program-hely {
+  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 10px 0;
   text-align: left;
 }
 .program-description {
@@ -201,7 +245,7 @@ body {
   flex-direction: column;
   width: 50%;
   justify-self: center;
-  margin: 150px 0;
+  margin: 100px 0;
 }
 .registration-title, .news-title {
   font-size: clamp(2rem, 5vw, 3rem);
