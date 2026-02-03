@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediastyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Just+Another+Hand&family=Permanent+Marker&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/re@3x.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
@@ -19,13 +21,17 @@
       <div class="menu-logo">
         <a href="index.html"><img class="menu-logo-image" src="images/alumni logo@3x.webp"></a>
       </div>
-      <div class="menu-pages">
+      <div class="menu-pages" id="menu-pages">
         <a class="active" href="index.html">Főoldal</a>
         <a href="#program">Program</a>
         <a href="#registration">Regisztráció</a>
         <a href="#news">Hírek</a>
       </div>
+      <a href="javascript:void(0);" class="telo-menu-icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
+
 
 
     <div class="hero">
@@ -121,7 +127,7 @@
           <div class="program-content2">
             <div class="program-title">Networking</div>
             <div class="program-hely"><i>Aula</i></div>
-            <div class="program-description">Hálózatépítési lehetőségek a diákok számára.</div>
+            <div class="program-description">Hálózatépítési lehetőségek a diákok számára. Hálózatépítési lehetőségek a diákok számára. Hálózatépítési lehetőségek a diákok számára.</div>
           </div>
         </div>
       </div>
@@ -230,6 +236,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        const menu = document.getElementById("menu-pages");
+
+        if (menu.classList.contains("show")) {
+          menu.classList.remove("show");
+        } else {
+          menu.classList.add("show");
+        }
+      }
+    </script>
   </body>
+  
 
 </html>
