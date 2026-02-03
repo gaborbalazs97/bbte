@@ -4,7 +4,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.menu-pages.show {
+  display: flex !important;
+}
+.telo-menu-icon {
+  display: none;
+}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -58,8 +63,9 @@ body {
   overflow: hidden;
 }
 .hero-title {
-  font-size: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(1.7rem, 4vw, 5rem);
   font-weight: 800;
+  text-wrap: nowrap;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -70,7 +76,7 @@ body {
   margin-bottom: 10px;
 }
 .hero-description {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
   font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
@@ -285,7 +291,7 @@ body {
 .input2 {
   padding: 4px;
   width: 100%;
-  font-size: clamp(0.4rem, 1vw, 1rem);
+  font-size: clamp(0.8rem, 1vw, 1rem);
   border: none;
   border-radius: 5px;
   outline: none;
@@ -371,11 +377,18 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.news {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-self: center;
+  margin: 100px 0;
+}
 .news-row {
   display: flex;
   flex-direction: row;
   justify-self: center;
-  width: 50%;
+  width: 100%;
   gap: 30px;
   margin-bottom: 50px;
 }
@@ -416,6 +429,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 300px;
+  width: 100%;
   background-color: #4451d9;
   margin-top: 100px;
   padding: 50px 0;
